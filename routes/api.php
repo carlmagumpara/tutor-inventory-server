@@ -25,6 +25,9 @@ Route::get('products/show/{id}', [ProductController::class, 'show']);
 Route::post('products/update/{id}', [ProductController::class, 'update']);
 Route::delete('products/delete/{id}', [ProductController::class, 'delete']);
 
+// Units
+Route::get('products/units', [ProductController::class, 'units']);
+
 // Route::get('/products','ProductController@index');
 // Route::post('/products/store','ProductController@store');
 // Route::patch('/products/update/{id}','ProductController@update');
