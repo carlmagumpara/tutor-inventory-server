@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\{ ProductController, LoginController  };
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +27,8 @@ Route::delete('products/delete/{id}', [ProductController::class, 'delete']);
 
 // Units
 Route::get('products/units', [ProductController::class, 'units']);
+
+Route::post('login', [LoginController::class, 'login']);
 
 // Route::get('/products','ProductController@index');
 // Route::post('/products/store','ProductController@store');
